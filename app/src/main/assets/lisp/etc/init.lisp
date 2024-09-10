@@ -6,8 +6,8 @@
 (defvar *ecl-home* *default-pathname-defaults*)
 
 (format t "Loading the modules~%")
-(require '#:asdf)
 (require '#:sockets)
+(require '#:asdf)
 (require '#:serve-event)
 
 (setf asdf:*user-cache* (merge-pathnames #P"../cache/" *default-pathname-defaults*))
